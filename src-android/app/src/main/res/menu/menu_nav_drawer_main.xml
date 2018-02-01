@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_drawer_home"
+            android:title="@string/drawer_menu_home" />
+        <item
+            android:id="@+id/nav_trending"
+            android:icon="@drawable/ic_nav_drawer_home"
+            android:title="예약확인" />
+        <item
+            android:id="@+id/nav_member"
+            android:icon="@drawable/ic_drawer_menu_profile"
+            android:title="팀원관리" />
+        <item
+            android:id="@+id/drawer_menu_group_mgmt"
+            android:icon="@drawable/ic_nav_drawer_home"
+            android:title="주차장찾기" />
+        <item
+            android:id="@+id/drawer_menu_profile"
+            android:icon="@drawable/ic_nav_drawer_home"
+            android:title="체육시설찾기" />
+        <item
+            android:id="@+id/drawer_menu_login"
+            android:icon="@drawable/ic_nav_drawer_login"
+            android:title="로그아웃" />
+    </group>
+
+
+</menu>

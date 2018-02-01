@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/ic_bottom_nav_home"
+        android:title="공간찾기" />
+
+    <item
+        android:id="@+id/bottom_nav_room_list"
+        android:icon="@drawable/ic_bottom_nav_room_list"
+        android:title="예약확인" />
+
+    <item
+        android:id="@+id/bottom_nav_reserved_list"
+        android:icon="@drawable/ic_bottom_nav_reserved_list"
+        android:title="팀원관리" />
+
+    <item
+        android:id="@+id/bottom_nav_message"
+        android:icon="@drawable/ic_bottom_nav_message"
+        android:title="주차장검색" />
+</menu>

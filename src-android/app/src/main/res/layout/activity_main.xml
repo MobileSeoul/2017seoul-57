@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--toolbar and header-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <include layout="@layout/toolbar"
+                     android:id="@+id/toolbar_shell"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/drawer_layout"
+            app:layout_constraintTop_toBottomOf="@id/app_bar_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <ViewFlipper
+                android:background="@color/material_indigo_50"
+                android:id="@+id/mainflip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:flipInterval="100">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:id="@+id/content_main">
+
+            </FrameLayout>
+            </ViewFlipper>
+            <!--navigation drawer menu-->
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="false"
+                app:headerLayout="@layout/drawer_content_header"
+                app:itemIconTint="@color/grey_40"
+                app:itemTextColor="@color/grey_90"
+                app:menu="@menu/menu_nav_drawer_main" />
+        </android.support.v4.widget.DrawerLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            app:itemIconTint="@drawable/color_state_primary"
+            app:itemTextColor="@drawable/color_state_primary"
+            app:menu="@menu/menu_bottom_nav_main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+</layout>

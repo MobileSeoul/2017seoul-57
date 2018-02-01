@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_menu_titles">
+        <item>공간찾기</item>
+        <item>예약확인</item>
+        <item>팀원관리</item>
+        <item>주차장찾기</item>
+        <item>체육시설찾기</item>
+        <item>로그아웃</item>
+    </string-array>
+</resources>
